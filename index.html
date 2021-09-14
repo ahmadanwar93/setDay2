@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Relap</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        nav{
+            background-color: rgb(109,65,191);
+            width: 1442px;
+            height: 50px;
+                
+            
+
+        }
+        nav h1, nav ul, nav li{
+            display: inline-block;
+            color: white;
+            
+        }
+        div.container{
+            width:1442px;
+            height:3826px;
+            background-color: white;
+        }
+        nav h1{
+            margin-right: 334px;
+            padding-left:18px;
+            
+        }
+        nav ul li{
+            margin-right: 35px;
+            font-weight: bold;
+        }
+        
+        nav div{
+            display: inline-block;
+            margin-left: 340px;
+            width: 170px;
+            height: 40px;
+            text-align: center;
+            padding:6px 0;
+            /* background-color: white; */
+            border-radius: 30px;
+            border-color: white;
+            border-style: solid;
+            color: white;
+        }
+        nav div p{
+            text-align: center;
+            
+        }
+        nav h1{
+            padding-top: 10px;
+        }
+        section.introduction{
+            width:1442px;
+            height:708px;
+            background-color: rgb(157,89,203);
+        }
+        section.gallery{
+            background-color: white;
+            height: 769px;
+            width:1442px;
+        }
+        section.planet{
+            height:766px;
+            width:1442px;
+            
+        }
+        section.whatWeDo{
+            background-color: rgb(223,217,217);
+            height: 770px;
+            width: 1442px;
+        }
+        section.testimonial{
+            background-color: white;
+            height: auto;
+        }
+        
+        section.introduction{
+            display: flex;
+        }
+        div.introGraphics img{
+            height: 800px;
+            width: 800px;
+        }
+        div.introGraphics{
+            height: 708px;
+            width: 600px;
+            padding: 50px;
+        }
+        div.introText {
+            height: 708px;
+            background-color:rgb(157,89,203);
+            color: white;
+        }
+        div.introText h1{
+            margin-top: 152px;
+            margin-left: 103px;
+            margin-bottom: 40px;
+            font-size: 50px;
+            width: 40px;;
+        }
+        p.introSubText{
+            margin-left:103px;
+            margin-bottom: 50px;
+            width: 390px;
+        }
+        div.galleryTextLeft{
+            /* display: inline-block;
+            background-color: red; */
+            height: 150px;
+            width:300px;
+            margin-top: 150px;
+            margin-left: 102px;
+            margin-right: 256px;
+        }
+        div.galleryTextRight{
+            /* display: inline-block;
+            background-color: blue; */
+            height: 150px;
+            width: 550px;
+            
+            margin-top: 120px;
+        }
+        div.galleryText{
+            display: flex;
+        }
+        div.gallerySelection{
+            margin-left: 102px;
+            margin-bottom: 30px;
+        }
+        div.gallerySelection p{
+            display: inline-block;
+            margin-right: 50px;
+        }
+        
+        div.galleryImages img{
+            width: 370px;
+            height: 270px;
+        }
+        
+        div #galleryImages{
+            display: inline-block;
+            margin-left: 43px;
+        }
+        
+        
+        div.planetPeople{
+            display: inline-block;
+            width: 480px;
+        }
+        div.planetText{
+            display: inline-block;
+            width: 480px;
+            padding-top: 150px;
+            padding-left: 150px;
+            padding-bottom: 150px;
+            color: white;
+        }
+        section.planet{
+            background-color: rgb(48,35,174);
+            background-image: url("Morning class/images/about_bg.png");
+        }
+        div.icon{
+            height: 225px;
+            width:304px;
+            background-color: white;
+            display: inline-block;
+            margin-right: 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            padding: 45px;
+        }
+        div.testimonialCustomer{
+            height: 274px;
+            width: 370px;
+            background-color: white;
+            display: inline-block;
+            box-shadow: 0px 0px 10px rgb(226,226, 226);
+            margin-left: 43px;
+            padding: 30px;
+        }
+        div.contentHeader{
+            /* margin-top: 80px; */
+            text-align: center;
+        }
+        div.contentText{
+            text-align: center;
+            width: 500px;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        div.testimonialCustomer p{
+            margin-bottom: 30px;
+            margin-top: 16px;
+        }
+        div.contentHeader{
+            padding-top: 90px;
+            /* margin-bottom: 25px; */
+        }
+        div.contentText{
+            margin-bottom: 58px;
+        }
+        div.contentHolder{
+            text-align: center;
+        }
+        h1.fugiatQuo{
+            margin-bottom: 25px;;
+        }
+        section.planet{
+            padding: 130px;
+            display: flex;
+        }
+        p.title{
+            margin-bottom: 39px;
+        }
+        h1.subtitle{
+            margin-bottom: 26px;
+        }
+        div.exploreButton{
+            width: 175px;
+            height: 50px;
+            background-color: rgb(255,195,0);
+            margin-left: 102px;
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 30px;
+        }
+        div.galleryCollections{
+            padding-left: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1>Relap</h1>
+            <ul>
+                <li>Home</li>
+                <li>Features</li>
+                <li>Work</li>
+                <li>About</li>
+                <li>People</li>
+                <li>News</li>
+            </ul>
+            <div class="contactUsButton">
+                <p>Contact Us</p>
+            </div>
+        </nav>
+
+        <section class="introduction">
+            <div class="introText">
+                <h1>Omnis Voluptas</h1>
+                <p class = introSubText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget diam nec urna ornare consectetur. Fusce.</p>
+                <div class = "exploreButton">
+                    <p>Explore</p>
+                </div>
+            </div>
+            <div class="introGraphics">
+                <img src="Morning class/images/banner_bg.png">
+            </div>    
+        </section>
+
+        <section class="gallery">
+            <div class="galleryText">
+                <div class="galleryTextLeft">
+                    <p style="font-weight: bold;">Lorem ipsum dolor</p>
+                    <h1 style="font-size: 28px;">Ullam Corpiris suscipit</h1>
+                </div>
+                <div class="galleryTextRight">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus arcu, malesuada nec semper et, cursus et purus.
+                        Donec
+                        quis tempus sem. Nam eros nulla, condimentum in turpis sed, tincidunt eleifend mi. Ut sed mauris ac dui laoreet
+                        viverra.
+                        Nulla sagittis arcu venenatis neque venenatis porta. Pellentesque id aliquet urna.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="gallerySelection">
+                <p>Quis Autem</p>
+                <p>Reprehenderit</p>
+                <p>Voluptate</p>
+                <p>Molestiae</p>
+                <p>Consequator</p>
+            </div>
+            <div class="galleryCollections">
+                <div id="galleryImages">
+                    <img src="Morning class/images/gallery_1.png">
+                </div>
+                <div id="galleryImages">
+                    <img src="Morning class/images/gallery_2.png">
+                </div>
+                <div id="galleryImages">
+                    <img src="Morning class/images/gallery_3.png">
+                </div>
+            </div>
+
+        </section>
+        <section class="planet">
+            
+            <div class="planetPeople">
+                <img src="Morning class/images/about_img.png">
+            </div>
+            <div class="planetText">
+                <p class="title" style="font-weight: bold;">Repellendus</p>
+                <h1 class="subtitle" style="font-size: 28px;">Temporibus quibusdam</h1>
+                <p class="description" style="font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacus arcu, malesuada nec semper et, cursus et purus. Donec
+                quis tempus sem. Nam eros nulla, condimentum in turpis seds</p>
+            </div>
+        </section>
+
+        <section class="whatWeDo">
+            <div class="contentHeader">
+                <h1 class="fugiatQuo" style="font-size: 22px; font-weight: bolder;">Fugiat quo</h1>
+            </div>
+            <div class="contentText">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget diam nec urna ornare consectetur. Fusce.</p>
+            </div>
+            <div class="contentHolder">
+                <div class="contentImageFirstRow">
+                    <div class="icon">
+                        <div>
+                            <img src="Morning class/images/icon_1.png">
+                        </div>
+                        <h2>Consequuntur</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper et risus.
+</p>
+                    </div>
+                    <div class="icon">
+                        <div>
+                            <img src="Morning class/images/icon_2.png">
+                        </div>
+                        <h2>Consequuntur</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper et risus.
+                        </p>
+                    </div>
+                    <div class="icon">
+                        <div>
+                            <img src="Morning class/images/icon_3.png">
+                        </div>
+                        <h2>Consequuntur</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper et risus.
+                        </p>
+                    </div>
+                </div>
+                <div class="contentImageSecondRow">
+                    <div class="icon">
+                        <div>
+                            <img src="Morning class/images/icon_4.png">
+                        </div>
+                        <h2>Consequuntur</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper et risus.
+                        </p>
+                    </div>
+                    <div class="icon">
+                        <div>
+                            <img src="Morning class/images/icon_5.png">
+                        </div>
+                        <h2>Consequuntur</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper et risus.
+                        </p>
+                    </div>
+                    <div class="icon">
+                        <div>
+                            <img src="Morning class/images/icon_6.png">
+                        </div>
+                        <h2>Consequuntur</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ullamcorper et risus.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="testimonial">
+            <div class="contentHeader">
+                <h1>Testimonial</h1>
+            </div>
+            
+            <div class="contentText">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque iaculis mi in sodales. Etiam id justo a
+                        dolor
+                        fringilla.</p>
+            </div>
+            
+            
+            <div class="testimonialContent">
+                <div class="testimonialCustomer">
+                    <img src="Morning class/images/profile_1.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et gravida diam. Donec accumsan sapien.</p>
+                    <h4>Malin Quist</h4>
+                </div>
+                <div class="testimonialCustomer">
+                    <img src="Morning class/images/profile_2.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et gravida diam. Donec accumsan sapien.</p>
+                    <h4>Malin Quist</h4>
+                </div>
+                <div class="testimonialCustomer">
+                    <img src="Morning class/images/profile_3.png">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et gravida diam. Donec accumsan sapien.</p>
+                    <h4>Malin Quist</h4>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
